@@ -2,7 +2,12 @@ import * as readline from 'readline';
 import * as mysql from 'mysql';
 import { exec } from 'child_process';
 import * as http from 'http';
-//Grady
+
+//Cryptographic Failures A02
+//The code shows sensitive credentials.
+//For example the host, username and password.
+//If the Repository is leaked people can use this sensitive infromation.
+//One way to prevent it is do not store sensitive data unnecessarily. 
 const dbConfig = {
     host: 'mydatabase.com',
     user: 'admin',
